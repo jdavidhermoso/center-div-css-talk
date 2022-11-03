@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Flexbox
+    </title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .flex {
+            display: flex;
+            border: 1px solid red;
+            padding: 50px;
+            width: 200px;
+
+        }
+        .row {
+            flex-direction: row;
+        }
+        .column {
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+<h2>
+    Transform property CSS
+</h2>
+<ul>
+    <li> In place since 2017</li>
+    <li> Better space filling features</li>
+    <li> Not relates to HTML normal flow. Easy to create rows or columns</li>
+</ul>
+
+<p>
+    This is a flex container with flex-direction: row
+</p>
+<div class="flex row">
+    <div>
+        Flex item
+    </div>
+    <div>
+        Flex item
+    </div>
+    <div>
+        Flex item
+    </div>
+    <div>
+        Flex item
+    </div>
+</div>
+<p>
+    This is a flex container with flex-direction: column
+</p>
+<div class="flex column">
+    <div>
+        Flex item
+    </div>
+    <div>
+        Flex item
+    </div>
+    <div>
+        Flex item
+    </div>
+    <div>
+        Flex item
+    </div>
+</div>
+</body>
+</html>

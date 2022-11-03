@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Box sizing in CSS
+    </title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .a, .b {
+            width: 200px;
+            padding: 50px;
+        }
+
+        .a {
+            box-sizing: content-box;
+            border: 1px solid red;
+        }
+
+        .b {
+            box-sizing: border-box;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="a">
+        I'm a box with box-sizing: content-box; I've got applied a width of 200px, and a padding of 50px;
+    </div>
+    <div class="b">
+        I'm a box with box-sizing: border-box; I've got applied a width of 200px, and a padding of 50px;
+    </div>
+</div>
+</body>
+</html>

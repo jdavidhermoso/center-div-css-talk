@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        How to center a DIV with CSS
+    </title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .text-align {
+            text-align: center;
+            border: 1px solid red;
+        }
+
+        .margin-0-auto-container {
+            width: 700px;
+            border: 1px solid red;
+            margin: 50px 0;
+        }
+
+        .margin-0-auto {
+            width: 100px;
+            margin: 0 auto;
+        }
+
+        .absolute-negative-container {
+            position: relative;
+            margin-top: 50px;
+            width: 500px;
+            height: 500px;
+            border: 1px solid red;
+        }
+
+        .absolute-negative {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            left: 50%;
+            top: 50%;
+            margin-top: -75px;
+            margin-left: -75px;
+            border: 1px solid blue;
+        }
+
+        .absolute-negative-translate-container {
+            position: relative;
+            margin-top: 50px;
+            width: 500px;
+            height: 500px;
+            border: 1px solid red;
+        }
+
+        .absolute-negative-translate {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            left: 50%;
+            top: 50%;
+            border: 1px solid blue;
+            transform: translate(-50%, -50%);
+        }
+
+        .flex {
+            display: flex;
+            width: 500px;
+            height: 500px;
+            border: 1px solid red;
+            margin: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flex-item {
+            width: 100px;
+            height: 100px;
+            border: 1px solid blue;
+        }
+
+    </style>
+</head>
+<body>
+<h2>
+    How to center a div with CSS?
+</h2>
+<ul>
+    <li> Text align: center</li>
+    <li> margin: 0 auto;</li>
+    <li> Absolute position, negative margin</li>
+    <li> Absolute position, negative transform: translate()</li>
+    <li> Flexbox</li>
+
+</ul>
+
+<div class="text-align">
+    <a>
+        text-align: center;
+    </a>
+</div>
+<div class="margin-0-auto-container">
+    <div class="margin-0-auto">
+        width: 100px; margin: 0 auto;
+    </div>
+</div>
+
+<div class="absolute-negative-container">
+    <div class="absolute-negative">
+        Position absolute: top and left 50% and negative top and left margins of the half of the centered element
+    </div>
+</div>
+<div class="absolute-negative-translate-container">
+    <div class="absolute-negative-translate">
+        Position absolute: top and left 50% and transform: translate(-50%, -50%);
+    </div>
+</div>
+
+<div class="flex">
+    <div class="flex-item">
+        Flex item centered
+    </div>
+</div>
+
+</body>
+</html>

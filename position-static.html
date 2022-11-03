@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Position property Static
+    </title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        div {
+            top: 50px;
+            right: 102px;
+            bottom: 32px;
+            left: 10000px;
+            z-index: 1000;
+        }
+
+        .absolute {
+            position: absolute;
+            width: 100px;
+            left: 120px;
+            top: 130px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<h2>
+    Static position
+</h2>
+<ul>
+    <li>Default position for any HTML element</li>
+    <li>Follows normal flow of HTML</li>
+    <li>Top, right, bottom, left and z-index don't apply</li>
+</ul>
+
+
+<div class="absolute"> Absolute positioned element.</div>
+<div> Static positioned element.</div>
+
+</body>
+</html>

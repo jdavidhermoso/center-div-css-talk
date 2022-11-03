@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Position property absolute
+    </title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .relative {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            border: 2px solid red;
+        }
+
+        .absolute {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border: 2px solid blue;
+            top: 20%;
+            left: 50%;
+        }
+    </style>
+</head>
+<body>
+<h2>
+    Absolute position
+</h2>
+<ul>
+    <li> Removed from the HTML normal flow</li>
+    <li> Rest of elements make like it is not there</li>
+    <li> Relative to the closest positioned element</li>
+</ul>
+<div class="relative">
+    RELATIVE
+    <div class="absolute">
+        Absolute positioned div with a top of 20% and left of 50%;
+        Notice the top, left, right, and bottom properties are relative to its closest positioned container.
+    </div>
+</div>
+
+</body>
+</html>

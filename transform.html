@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Transform property CSS
+    </title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .transformed-div {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            top: 50px;
+            left: 50px;
+            border: 1px solid red;
+            transform: translate(50%);
+        }
+    </style>
+</head>
+<body>
+<h2>
+    Transform property CSS
+</h2>
+<ul>
+    <li> Skew, translate, rotate, scale, etc.</li>
+    <li> Translate moves the element,</li>
+    <li> Transform: translate moves the element relative to the position the element is actually occupying.</li>
+    <li> When you apply a % value, it is relative to itself.</li>
+
+</ul>
+
+
+<div class="transformed-div">
+    This div is relative positioned and translated with transform: translate();
+    <ul>
+        <li> width: 100px </li>
+        <li> height: 100px </li>
+        <li> top: 50px </li>
+        <li> left: 50px </li>
+        <li> transform: translate(50%); Since its width and height are 400px, it means it will translate 200px, that is the 50% of its width </li>
+    </ul>
+</div>
+</body>
+</html>

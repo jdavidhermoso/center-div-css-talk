@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Position property relative
+    </title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .only-relative, .moved {
+            position: relative;
+        }
+
+        .moved {
+            width: 200px;
+            height: 200px;
+            top: 250px;
+            right: 102px;
+            bottom: 32px;
+            left: 100px;
+            z-index: 10;
+            color: #fff;
+            background: blue;
+        }
+
+        .absolute {
+            position: absolute;
+            height: 50px;
+            top: 240px;
+            left: 200px;
+            background: red;
+            opacity: 1;
+            color: #fff;
+            z-index: 9;
+        }
+
+        .content {
+            margin-bottom: 200px;
+        }
+    </style>
+</head>
+<body>
+<div class="only-relative"> Only relative positioned element. There's no effect on it. It behaves as if it was static.
+</div>
+<div class="moved"> Relative positioned element with top, right, left, bottom and Z-Index properties applied. Z-index is
+    10.
+</div>
+<div>
+This div respects the space of the relative one, that has a height of 50px. Notice the blank space just above this div.
+</div>
+<div class="absolute"> Absolute positioned element with z-index of 9.</div>
+</body>
+</html>
